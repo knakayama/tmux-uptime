@@ -7,6 +7,6 @@ if echo "$_uptime" | grep -qF 'day'; then
 elif echo "$_uptime" | grep -qF 'sec'; then
   echo "$_uptime" | tr -s ' ' | perl -wlne 'printf "%ss\n",$1 if /(\d+\ssecs?)/'
 else
-  echo "$_uptime" | tr -s ' ' | perl -wlne 'printf "%sm\n",$1 if /up\s(.+?)(:?\smins?)?,/'
+  echo "$_uptime" | tr -s ' ' | perl -wlne 'printf "%sh\n",$1 if /up\s(.+?)(:?\smins?)?,/'
 fi
 
