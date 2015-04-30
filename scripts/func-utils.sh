@@ -5,7 +5,7 @@ get_tmux_option() {
   local default_value="$2"
   local option_value="$(tmux show-option -gqv "$option")"
 
-  [ -n "$option_value" ] && echo "$option_value" || echo "$default_value"
+  [[ -n "$option_value" ]] && echo "$option_value" || echo "$default_value"
 }
 
 set_tmux_option() {
