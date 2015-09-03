@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env/ bash
 
 get_tmux_option() {
   local option="$1"
