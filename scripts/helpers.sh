@@ -14,4 +14,3 @@ set_tmux_option() {
 
   tmux set-option -gq "$option" "$value"
 }
-

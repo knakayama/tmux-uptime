@@ -5,7 +5,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 uptime="#($CURRENT_DIR/scripts/uptime.sh)"
 uptime_interpolation_string="\#{uptime}"
 
-. "${CURRENT_DIR}/scripts/func-utils.sh"
+source "${CURRENT_DIR}/scripts/helpers.sh"
 
 do_interpolation() {
   local string="$1"
